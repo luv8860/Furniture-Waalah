@@ -59,6 +59,11 @@ flutter:
     - assets/facebook.png
     - assets/google.png
     - assets/email.png
+    - assets/bed.png
+    - assets/bed2.png
+    - assets/bed3.png
+    - assets/bed4.png
+    - assets/bed5.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
