@@ -178,7 +178,7 @@ class Signup extends StatelessWidget {
                                 color: Colors.white,
                                 fontWeight: FontWeight.bold)),
                         onPressed: () {
-Navigator.of(context).pushReplacement(
+Navigator.of(context).push(
                                               MaterialPageRoute(
                                                   builder: (context) =>
                                                       ProductScreen()));

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:furniture_waalah/services/category_list.dart';
+import 'package:furniture_waalah/services/product_card.dart';
 import 'package:furniture_waalah/services/search_box.dart';
 
 class Body extends StatelessWidget {
@@ -23,18 +24,20 @@ class Body extends StatelessWidget {
             child: ListView(
               children: [
                 SizedBox(height: 50),
-                ProductCard(imglink:'assets/bed.png',name:'Hello'),
+                ProductCard(
+                    imglink: 'assets/bed.png', name: 'Hello', price: '₹15000'),
                 SizedBox(height: 50),
-                ProductCard(imglink:'assets/bed2.png',name:'Hello'),
+                ProductCard(
+                    imglink: 'assets/bed2.png', name: 'Hello', price: '₹25000'),
                 SizedBox(height: 50),
-                ProductCard(imglink:'assets/bed3.png',name:'Hello'),
+                ProductCard(
+                    imglink: 'assets/bed3.png', name: 'Hello', price: '₹17500'),
                 SizedBox(height: 50),
-                ProductCard(imglink:'assets/bed4.png',name:'Hello'),
+                ProductCard(
+                    imglink: 'assets/bed4.png', name: 'Hello', price: '₹19000'),
                 SizedBox(height: 50),
-                ProductCard(imglink:'assets/bed5.png',name:'Hello'),
-
-
-                                
+                ProductCard(
+                    imglink: 'assets/bed5.png', name: 'Hello', price: '₹35000'),
               ],
             ),
           )
@@ -44,28 +47,3 @@ class Body extends StatelessWidget {
   }
 }
 
-class ProductCard extends StatelessWidget {
-  final String imglink;
-  final String name;
-  ProductCard({Key key, @required this.imglink, @required this.name}) : super(key: key);
-  @override
-  Widget build(BuildContext context) {
-    return FlatButton(
-      focusColor: Colors.transparent,
-      hoverColor: Colors.transparent,
-      highlightColor: Colors.transparent,
-      child: Container(
-        height: 200,
-        width: 500,
-        decoration: BoxDecoration(
-            color: Colors.orange,
-            borderRadius: BorderRadiusDirectional.all(Radius.circular(30))),
-        child:Stack(children: [
-          Positioned(top:20,left:10,child: Text(name,style:TextStyle(color:Colors.white,fontSize: 30))),
-          Positioned(top:20,right:10,child: Image.asset(imglink,height:80)),
-        ],)
-      ),
-      onPressed: () {},
-    );
-  }
-}

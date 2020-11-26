@@ -6,7 +6,7 @@ class Categorylist extends StatefulWidget {
 }
 
 class _CategorylistState extends State<Categorylist> {
-  int selected_index=0;
+  int selectedindex=0;
   List categories=['All','Sofa','Park bench','Armchair','hdbhcd','cadsckjac','askcbsa'];
   @override
   Widget build(BuildContext context) {
@@ -19,7 +19,7 @@ class _CategorylistState extends State<Categorylist> {
         itemBuilder: (context,index) => GestureDetector(
           onTap: (){
             setState(() {
-              selected_index=index;
+              selectedindex=index;
             });
           },
                   child: Container(alignment:Alignment.center
@@ -27,7 +27,7 @@ class _CategorylistState extends State<Categorylist> {
           margin:EdgeInsets.only(left:10),
           padding:EdgeInsets.symmetric(horizontal:10),
           decoration:BoxDecoration(
-            color:index==selected_index?
+            color:index==selectedindex?
               Colors.white.withOpacity(0.4):
               Colors.transparent,
             borderRadius:BorderRadius.circular(6)
