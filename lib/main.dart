@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:furniture_waalah/screens/login_page.dart';
+import 'package:furniture_waalah/screens/signup_page.dart';
 import 'package:page_transition/page_transition.dart';
 import 'package:furniture_waalah/screens/main_screen.dart';
 
@@ -39,6 +40,13 @@ class MyApp extends StatelessWidget {
             return PageTransition(
               child: LoginPage(),
               type: PageTransitionType.leftToRight,
+              settings: settings,
+            );
+            break;
+          case '/third':
+            return PageTransition(
+              child: Signup(),
+              type: PageTransitionType.rightToLeft,
               settings: settings,
             );
             break;
