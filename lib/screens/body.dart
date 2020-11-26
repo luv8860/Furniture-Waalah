@@ -25,19 +25,19 @@ class Body extends StatelessWidget {
               children: [
                 SizedBox(height: 50),
                 ProductCard(
-                    imglink: 'assets/bed.png', name: 'Hello', price: '₹15000'),
+                    imglink: 'assets/bed.png', name: 'Bed 1', price: '₹15000'),
                 SizedBox(height: 50),
                 ProductCard(
-                    imglink: 'assets/bed2.png', name: 'Hello', price: '₹25000'),
+                    imglink: 'assets/bed2.png', name: 'Bed 2', price: '₹25000'),
                 SizedBox(height: 50),
                 ProductCard(
-                    imglink: 'assets/bed3.png', name: 'Hello', price: '₹17500'),
+                    imglink: 'assets/bed3.png', name: 'Bed 3', price: '₹17500'),
                 SizedBox(height: 50),
                 ProductCard(
-                    imglink: 'assets/bed4.png', name: 'Hello', price: '₹19000'),
+                    imglink: 'assets/bed4.png', name: 'Bed 4', price: '₹19000'),
                 SizedBox(height: 50),
                 ProductCard(
-                    imglink: 'assets/bed5.png', name: 'Hello', price: '₹35000'),
+                    imglink: 'assets/bed5.png', name: 'Bed 5', price: '₹35000'),
               ],
             ),
           )

@@ -40,7 +40,6 @@ class ProductCard extends StatelessWidget {
                       borderRadius: BorderRadiusDirectional.only(
                           topEnd: Radius.circular(30),
                           bottomEnd: Radius.circular(30))),
-                  
                 ),
               ),
               Positioned(
@@ -72,7 +71,7 @@ class ProductCard extends StatelessWidget {
        Navigator.of(context).push(
                                               MaterialPageRoute(
                                                   builder: (context) =>
-                                                      Details(imglink: imglink,)));
+                                                      Details(imglink: imglink,name:name,price:price)));
       },
     );
   }
