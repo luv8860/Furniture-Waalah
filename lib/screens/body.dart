@@ -1,9 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:furniture_waalah/services/bed.dart';
 import 'package:furniture_waalah/services/category_list.dart';
-import 'package:furniture_waalah/services/product_card.dart';
 import 'package:furniture_waalah/services/search_box.dart';
+import 'package:furniture_waalah/services/sofa.dart';
 
-class Body extends StatelessWidget {
+class Body extends StatefulWidget {
+  @override
+  _BodyState createState() => _BodyState();
+}
+
+class _BodyState extends State<Body> {
+  List<Widget> pages =[Bed(),Sofa()];
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -14,36 +21,11 @@ class Body extends StatelessWidget {
         Categorylist(),
         SizedBox(height: 10),
         Expanded(
-            child: Stack(children: [
-          Container(
-            decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.only(
-                    topLeft: Radius.circular(60),
-                    topRight: Radius.circular(60))),
-            child: ListView(
-              children: [
-                SizedBox(height: 50),
-                ProductCard(
-                    imglink: 'assets/bed.png', name: 'Bed 1', price: '₹15000'),
-                SizedBox(height: 50),
-                ProductCard(
-                    imglink: 'assets/bed2.png', name: 'Bed 2', price: '₹25000'),
-                SizedBox(height: 50),
-                ProductCard(
-                    imglink: 'assets/bed3.png', name: 'Bed 3', price: '₹17500'),
-                SizedBox(height: 50),
-                ProductCard(
-                    imglink: 'assets/bed4.png', name: 'Bed 4', price: '₹19000'),
-                SizedBox(height: 50),
-                ProductCard(
-                    imglink: 'assets/bed5.png', name: 'Bed 5', price: '₹35000'),
-              ],
-            ),
-          )
-        ]))
+                  child: PageView(
+    children: pages,
+  ),
+        )
       ],
     );
   }
 }
-

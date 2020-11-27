@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:furniture_waalah/screens/details.dart';
+
 class ProductCard extends StatelessWidget {
   final String imglink;
   final String name;
@@ -48,7 +49,11 @@ class ProductCard extends StatelessWidget {
                   child: Text(name,
                       style: TextStyle(color: Colors.white, fontSize: 30))),
               Positioned(
-                  top: 20, right: 10, child: Hero(tag:'abc$imglink',child: Image.asset(imglink, height: 100))),
+                  top: 20,
+                  right: 10,
+                  child: Hero(
+                      tag: 'abc$imglink',
+                      child: Image.asset(imglink, height: 100))),
               Positioned(
                 top: 130,
                 child: Container(
@@ -68,10 +73,9 @@ class ProductCard extends StatelessWidget {
             ],
           )),
       onPressed: () {
-       Navigator.of(context).push(
-                                              MaterialPageRoute(
-                                                  builder: (context) =>
-                                                      Details(imglink: imglink,name:name,price:price)));
+        Navigator.of(context).push(MaterialPageRoute(
+            builder: (context) =>
+                Details(imglink: imglink, name: name, price: price)));
       },
     );
   }

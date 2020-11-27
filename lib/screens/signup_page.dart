@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:furniture_waalah/screens/product_screen.dart';
-import 'package:page_transition/page_transition.dart';
 
 
 class Signup extends StatelessWidget {

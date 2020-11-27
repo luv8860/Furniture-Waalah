@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+
 class Categorylist extends StatefulWidget {
   @override
   _CategorylistState createState() => _CategorylistState();
@@ -7,7 +8,8 @@ class Categorylist extends StatefulWidget {
 
 class _CategorylistState extends State<Categorylist> {
   int selectedindex=0;
-  List categories=['All','Sofa','Park bench','Armchair','hdbhcd','cadsckjac','askcbsa'];
+  List categories=['Bed','Sofa'];
+  
   @override
   Widget build(BuildContext context) {
     return Container(

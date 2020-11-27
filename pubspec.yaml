@@ -64,6 +64,11 @@ flutter:
     - assets/bed3.png
     - assets/bed4.png
     - assets/bed5.png
+    - assets/sofa 1.png
+    - assets/sofa 2.png
+    - assets/sofa 3.png
+    - assets/sofa 4.png
+    - assets/sofa 5.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
